@@ -1,0 +1,117 @@
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+
+body{
+  display: flex;
+  background: #39297b;
+  color: #fff;
+}
+
+
+.head{
+  width: 100%;
+  height: 50px;
+  margin: 8px 4px 0 4px;
+  padding: auto 8px;
+  background: #2f2f2fb6;
+}
+.head .search{
+  display: flex;
+  justify-content: space-between;
+}
+.sr{
+  width: 90%;
+  height: 35px;
+  margin: 5px 5%;
+  border-radius: 0 10px 0 10px;
+  background: #fff;
+}
+button, input{
+  outline: none;
+  border: none;
+}
+.search .word{
+  width: 85%;
+  height: 29px;
+  margin: 3px 0 3px 10px;
+}
+.word::placeholder, .word:focus{
+  font-weight: 600;
+  color: red;
+}
+.search button{
+  width: 15%;
+  height: 35px;
+  background: #e62d2d;
+  font-size: 19px;
+  border-radius: 0 10px;
+}
+  
+.gallery {
+  display: flex;
+  position: absolute;
+  top: 60px;
+  margin: 5px;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: auto;
+  height: 500px;
+}
+.gallery .videos {
+  gap: 10px;
+  max-width: 95%;
+  margin-top: 15px;
+  columns: 5 340px;
+  list-style: none;
+}
+.gallery .videos .card {
+  display: flex;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+.card{
+  width: 95%;
+  height: 300px;
+  box-shadow: 0 0 15px red;
+  background: #343434b2;
+  margin: 10px 5px;
+}
+.card .img {
+  width: 100%;
+  height: 203px;
+}
+li:hover{
+  box-shadow: 0 0 15px blue;
+}
+.post{
+  position: absolute;
+  top: 205px;
+  margin: 5px 5px 10px 15px;
+}
+.title{
+  height: 50px;
+  overflow-y: auto;
+  border-left: 4px solid blue;
+  padding: 0 0 0 10px;
+}
+.title{
+  font-weight: 600;
+  color: #fff;
+}
+.chn{
+  margin-top: 10px;
+  color: #343434;
+}
+.chn span{
+  background: #1a1a1a;
+  padding: 2px 8px;
+  color: #777;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 4px;
+}
